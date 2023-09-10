@@ -1,3 +1,23 @@
+# VS Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
 # Prerequisites
 *.d
 
@@ -50,3 +70,33 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# FPGA VHDL ignores
+*.cf
+*.html
+*.o
+*.ko
+*.obj
+*.elf
+*.*~
+*.ghw
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Quartus files
+fpga/output_files
+fpga/incremental_db
+fpga/db
+*.bak
