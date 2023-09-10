@@ -1,0 +1,178 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2023  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+# Date created = 18:53:03  August 21, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		homecockpit_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC5C6F27C7
+set_global_assignment -name TOP_LEVEL_ENTITY homecockpit
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.2
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:53:03  AUGUST 21, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_location_assignment PIN_AC9 -to input_0[0]
+set_location_assignment PIN_Y16 -to input_1[3]
+set_location_assignment PIN_AE10 -to input_0[1]
+set_location_assignment PIN_AD13 -to input_0[2]
+set_location_assignment PIN_AC8 -to input_0[3]
+set_location_assignment PIN_W11 -to input_0[4]
+set_location_assignment PIN_AB10 -to input_0[5]
+set_location_assignment PIN_V10 -to input_0[6]
+set_location_assignment PIN_AC10 -to input_0[7]
+set_location_assignment PIN_F7 -to output_0[0]
+set_location_assignment PIN_F6 -to output_0[1]
+set_location_assignment PIN_G6 -to output_0[2]
+set_location_assignment PIN_G7 -to output_0[3]
+set_location_assignment PIN_J8 -to output_0[4]
+set_location_assignment PIN_J7 -to output_0[5]
+set_location_assignment PIN_K10 -to output_0[6]
+set_location_assignment PIN_K8 -to output_0[7]
+set_location_assignment PIN_P11 -to input_1[0]
+set_location_assignment PIN_P12 -to input_1[1]
+set_location_assignment PIN_Y15 -to input_1[2]
+set_location_assignment PIN_H12 -to clk
+set_location_assignment PIN_P8 -to cpu_irq
+set_location_assignment PIN_U22 -to n_reset
+set_location_assignment PIN_Y11 -to input_1[5]
+set_location_assignment PIN_AE19 -to input_1[6]
+set_location_assignment PIN_H7 -to output_1[0]
+set_location_assignment PIN_J10 -to output_1[1]
+set_location_assignment PIN_L7 -to output_1[2]
+set_location_assignment PIN_K6 -to output_1[3]
+set_location_assignment PIN_D8 -to output_1[4]
+set_location_assignment PIN_E9 -to output_1[5]
+set_location_assignment PIN_A5 -to output_1[6]
+set_location_assignment PIN_B6 -to output_1[7]
+set_location_assignment PIN_H8 -to output_2[0]
+set_location_assignment PIN_H9 -to output_2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cpu_irq
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_0[7]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_0[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_0[5]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_0[4]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_0[2]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_0[3]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_0[1]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_0[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_0
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_1[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_1[5]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_1[7]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_1[4]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_1[3]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_1[2]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_1[1]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_1[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to input_1
+set_location_assignment PIN_AF9 -to input_1[7]
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp1.stp
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to n_reset
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name USE_LOGIC_ANALYZER_INTERFACE_FILE homecockpit
+set_global_assignment -name ENABLE_LOGIC_ANALYZER_INTERFACE OFF
+set_location_assignment PIN_F26 -to sclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sclk
+set_location_assignment PIN_R10 -to miso
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to miso
+set_location_assignment PIN_R9 -to mosi
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to mosi
+set_location_assignment PIN_R8 -to n_cs
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to n_cs
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name VHDL_FILE "src/spi-slave.vhdl"
+set_global_assignment -name VHDL_FILE "src/spi-cpu-interface.vhdl"
+set_global_assignment -name VHDL_FILE "src/status-reg.vhdl"
+set_global_assignment -name VHDL_FILE src/output.vhdl
+set_global_assignment -name VHDL_FILE src/input.vhdl
+set_global_assignment -name VHDL_FILE src/homecockpit_pck.vhdl
+set_global_assignment -name VHDL_FILE src/homecockpit.vhdl
+set_global_assignment -name VHDL_FILE src/decoder.vhdl
+set_global_assignment -name VHDL_FILE "src/control-reg.vhdl"
+set_global_assignment -name SDC_FILE homecockpit.sdc
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X1"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN ON
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+set_location_assignment PIN_V19 -to hex_0[0]
+set_location_assignment PIN_V18 -to hex_0[1]
+set_location_assignment PIN_V17 -to hex_0[2]
+set_location_assignment PIN_W18 -to hex_0[3]
+set_location_assignment PIN_Y20 -to hex_0[4]
+set_location_assignment PIN_Y19 -to hex_0[5]
+set_location_assignment PIN_Y18 -to hex_0[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_0[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_0[5]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_0[4]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_0[3]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_0[2]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_0[1]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_0[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_0
+set_location_assignment PIN_AA18 -to hex_1[0]
+set_location_assignment PIN_AD26 -to hex_1[1]
+set_location_assignment PIN_AB19 -to hex_1[2]
+set_location_assignment PIN_AE26 -to hex_1[3]
+set_location_assignment PIN_AE25 -to hex_1[4]
+set_location_assignment PIN_AC19 -to hex_1[5]
+set_location_assignment PIN_AF24 -to hex_1[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_1[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_1[5]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_1[4]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_1[3]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_1[2]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_1[1]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_1[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to hex_1
+set_global_assignment -name STRATIXII_CONFIGURATION_DEVICE EPCQ256
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp
